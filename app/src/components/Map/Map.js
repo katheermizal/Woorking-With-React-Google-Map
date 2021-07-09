@@ -114,7 +114,7 @@ const Search = ({ panTo }) => {
 
 const Map = () => {
     const { isLoaded, loadError } = useLoadScript({
-        googleMapsApiKey: 'AIzaSyBNTafGMXWcUCcqTOojeG7WlV14VX_2w8A',
+        googleMapsApiKey: 'YOUR_API_KEY',
         libraries,
       });
       const [markers, setMarkers] = React.useState([]);
