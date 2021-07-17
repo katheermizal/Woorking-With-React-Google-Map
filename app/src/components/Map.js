@@ -3,6 +3,7 @@ import { withGoogleMap, GoogleMap, withScriptjs, InfoWindow, Marker } from "reac
 import Geocode from "react-geocode";
 import Autocomplete from 'react-google-autocomplete';
 import { GoogleMapsAPI } from '../client-config';
+import * as propertiesData from '../data/data.json';
 
 Geocode.setApiKey( GoogleMapsAPI );
 Geocode.enableDebug();
@@ -15,6 +16,7 @@ class Map extends Component{
 			city: '',
 			area: '',
 			state: '',
+			selectedPark: null,
 			mapPosition: {
 				lat: this.props.center.lat,
 				lng: this.props.center.lng
@@ -135,7 +137,7 @@ class Map extends Component{
 	 * @param event
 	 */
 	onInfoWindowClose = ( event ) => {
-
+		
 	};
 
 	/**
@@ -212,6 +214,8 @@ class Map extends Component{
 		const AsyncMap = withScriptjs(
 			withGoogleMap(
 				props => (
+					<>
+						<div>Hi</div>
 					<GoogleMap google={ this.props.google }
 					           defaultZoom={ this.props.zoom }
 					           defaultCenter={{ lat: this.state.mapPosition.lat, lng: this.state.mapPosition.lng }}
@@ -233,6 +237,47 @@ class Map extends Component{
 						        position={{ lat: this.state.markerPosition.lat, lng: this.state.markerPosition.lng }}
 						/>
 						<Marker />
+
+						{ propertiesData.properties.map(property => (
+							<Marker 
+								key={property.id}
+								draggable={false}
+								position={{
+									lat: parseFloat(property.property_location_latitude),
+									lng: parseFloat(property.property_location_longitude)
+								}}
+								onClick={() => {
+									this.setState({
+										selectedPark: property,
+									})
+								}}
+								icon={{
+									url: `/map-icon.png`,
+									scaledSize: new window.google.maps.Size(45, 60)
+								}}
+							/>
+						))}
+
+						{this.state.selectedPark && (
+							<InfoWindow
+								onCloseClick={() => {
+									this.setState({
+										selectedPark: null,
+									})
+								}}
+								position={{
+									lat: parseFloat(this.state.selectedPark.property_location_latitude),
+									lng: parseFloat(this.state.selectedPark.property_location_longitude)
+								}}
+							>
+								<div>
+									<h3>{this.state.selectedPark.name}</h3>
+									<p>{this.state.selectedPark.url_key}</p>
+								</div>
+							</InfoWindow>
+						)}
+
+						
 						{/* For Auto complete Search Box */}
 						<Autocomplete
 							style={{
@@ -250,6 +295,7 @@ class Map extends Component{
                             }}
 						/>
 					</GoogleMap>
+					</>
 				)
 			)
 		);

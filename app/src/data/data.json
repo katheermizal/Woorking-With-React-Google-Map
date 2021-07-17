@@ -1,0 +1,160 @@
+{
+    "properties": [
+        {
+            "__typename": "SimpleProduct",
+            "id": 6,
+            "name": "New Building in - Colombo - 3",
+            "price": {
+                "__typename": "ProductPrices",
+                "regularPrice": {
+                    "__typename": "Price",
+                    "amount": {
+                        "__typename": "Money",
+                        "currency": "USD",
+                        "value": 200000
+                    }
+                }
+            },
+            "small_image": {
+                "__typename": "ProductImage",
+                "url": "https://magento-626979-2035997.cloudwaysapps.com/pub/media/catalog/product/cache/15b096f4cef21ce87463fadb339eb59d/4/9/494970f1-b1f9-445d-9c1d-d1295918d976-w678-h600_1.jpg"
+            },
+            "url_key": "four-bedroom-apartments-3",
+            "url_suffix": ".html",
+            "bathrooms": 22,
+            "bedrooms": 17,
+            "property_location_longitude": " 79.8499160619995",
+            "property_location_latitude": "6.912296882410035"
+        },
+        {
+            "__typename": "SimpleProduct",
+            "id": 5,
+            "name": "5 Stories Building in - COlombo - 13",
+            "price": {
+                "__typename": "ProductPrices",
+                "regularPrice": {
+                    "__typename": "Price",
+                    "amount": {
+                        "__typename": "Money",
+                        "currency": "USD",
+                        "value": 140000
+                    }
+                }
+            },
+            "small_image": {
+                "__typename": "ProductImage",
+                "url": "https://magento-626979-2035997.cloudwaysapps.com/pub/media/catalog/product/cache/15b096f4cef21ce87463fadb339eb59d/b/3/b3736515-65f6-44cf-bd85-8721655618a7-w1320-h698.jpg"
+            },
+            "url_key": "four-bedroom-apartments-2",
+            "url_suffix": ".html",
+            "bathrooms": 22,
+            "bedrooms": 17,
+            "property_location_longitude": "79.85944326842039",
+            "property_location_latitude": "6.949701198396284"
+        },
+        {
+            "__typename": "SimpleProduct",
+            "id": 4,
+            "name": "Best ViewApartments",
+            "price": {
+                "__typename": "ProductPrices",
+                "regularPrice": {
+                    "__typename": "Price",
+                    "amount": {
+                        "__typename": "Money",
+                        "currency": "USD",
+                        "value": 40000
+                    }
+                }
+            },
+            "small_image": {
+                "__typename": "ProductImage",
+                "url": "https://magento-626979-2035997.cloudwaysapps.com/pub/media/catalog/product/cache/15b096f4cef21ce87463fadb339eb59d/6/a/6ad1d0a6-40b6-4752-ab53-4c0b4dc5a961-w2000-h1333_1.jpg"
+            },
+            "url_key": "four-bedroom-apartments-1",
+            "url_suffix": ".html",
+            "bathrooms": 22,
+            "bedrooms": 17,
+            "property_location_longitude": "79.91510446989744",
+            "property_location_latitude": "6.9437797562827575"
+        },
+        {
+            "__typename": "SimpleProduct",
+            "id": 3,
+            "name": "Four bedroom Apartments",
+            "price": {
+                "__typename": "ProductPrices",
+                "regularPrice": {
+                    "__typename": "Price",
+                    "amount": {
+                        "__typename": "Money",
+                        "currency": "USD",
+                        "value": 30000
+                    }
+                }
+            },
+            "small_image": {
+                "__typename": "ProductImage",
+                "url": "https://magento-626979-2035997.cloudwaysapps.com/pub/media/catalog/product/cache/15b096f4cef21ce87463fadb339eb59d/b/5/b53ec999-ac91-491e-92a2-e976734965fd-w2000-h1333.jpg"
+            },
+            "url_key": "four-bedroom-apartments",
+            "url_suffix": ".html",
+            "bathrooms": 20,
+            "bedrooms": 15,
+            "property_location_longitude": " 79.90064199888914",
+            "property_location_latitude": "6.943012945377122"
+        },
+        {
+            "__typename": "SimpleProduct",
+            "id": 2,
+            "name": "Room  in Wellampitiya  - H 4109",
+            "price": {
+                "__typename": "ProductPrices",
+                "regularPrice": {
+                    "__typename": "Price",
+                    "amount": {
+                        "__typename": "Money",
+                        "currency": "USD",
+                        "value": 18000
+                    }
+                }
+            },
+            "small_image": {
+                "__typename": "ProductImage",
+                "url": "https://magento-626979-2035997.cloudwaysapps.com/pub/media/catalog/product/cache/15b096f4cef21ce87463fadb339eb59d/2/0/2016807643_8_1_210217_080631-w1620-h1080_1.jpg"
+            },
+            "url_key": "house-in-wellampitiya-h-4110",
+            "url_suffix": ".html",
+            "bathrooms": 18,
+            "bedrooms": 12,
+            "property_location_longitude": "79.899354538562",
+            "property_location_latitude": "6.941905327418285"
+        },
+        {
+            "__typename": "SimpleProduct",
+            "id": 1,
+            "name": "House  in Wellampitiya  - H 4109",
+            "price": {
+                "__typename": "ProductPrices",
+                "regularPrice": {
+                    "__typename": "Price",
+                    "amount": {
+                        "__typename": "Money",
+                        "currency": "USD",
+                        "value": 18
+                    }
+                }
+            },
+            "small_image": {
+                "__typename": "ProductImage",
+                "url": "https://magento-626979-2035997.cloudwaysapps.com/pub/media/catalog/product/cache/15b096f4cef21ce87463fadb339eb59d/f/2/f2e01c8e-da27-41d1-9f4c-0a5f4ebad2a7-w3000-h1688.jpg"
+            },
+            "url_key": "house-in-wellampitiya-h-4109",
+            "url_suffix": ".html",
+            "bathrooms": 19,
+            "bedrooms": 12,
+            "property_location_longitude": "79.90536268675535",
+            "property_location_latitude": "6.940542101736244"
+        }
+    ]
+}
